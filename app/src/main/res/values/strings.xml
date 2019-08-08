@@ -13,7 +13,7 @@
     @author Sherdle
     -->
 
-    <string name="app_name">AppName</string>
+    <string name="app_name">Радио Тэтим</string>
 
     <!-- API keys -->
     <string name="twitter_api_consumer_key"></string>
