@@ -12,7 +12,7 @@
         android:visibility="visible"
         android:divider="@null" />
 
-    <com.sherdle.universal.providers.soundcloud.ui.views.BottomRecyclerListView
+    <com.stdio.radiotemplate.providers.soundcloud.ui.views.BottomRecyclerListView
         android:id="@+id/activity_artist_playlist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

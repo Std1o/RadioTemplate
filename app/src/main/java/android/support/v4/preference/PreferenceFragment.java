@@ -32,7 +32,7 @@ import android.view.View.OnKeyListener;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.sherdle.universal.R;
+import com.stdio.radiotemplate.R;
 
 public abstract class PreferenceFragment extends Fragment implements
 		PreferenceManagerCompat.OnPreferenceTreeClickListener {

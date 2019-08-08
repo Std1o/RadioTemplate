@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:padding="@dimen/spacing_xl">
 
-        <com.sherdle.universal.util.layout.RoundedImageView
+        <com.stdio.radiotemplate.util.layout.RoundedImageView
             android:id="@+id/thumbImage"
             android:layout_width="match_parent"
             android:layout_height="150dp"

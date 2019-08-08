@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.sherdle.universal"
+    package="com.stdio.radiotemplate"
     android:versionCode="9"
     android:versionName="1.0">
 
@@ -33,7 +33,7 @@
         android:required="true" />
 
     <application
-        android:name=".App"
+        android:name="com.stdio.radiotemplate.App"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -45,7 +45,7 @@
 
         <!-- Activities -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.stdio.radiotemplate.MainActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name">
             <intent-filter>
@@ -54,37 +54,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".providers.rss.ui.RssDetailActivity" />
-        <activity android:name=".providers.youtube.ui.YoutubeDetailActivity" />
-        <activity android:name=".providers.wordpress.ui.WordpressDetailActivity" />
-        <activity android:name=".providers.woocommerce.ui.ProductActivity" />
+        <activity android:name="com.stdio.radiotemplate.providers.rss.ui.RssDetailActivity" />
+        <activity android:name="com.stdio.radiotemplate.providers.youtube.ui.YoutubeDetailActivity" />
+        <activity android:name="com.stdio.radiotemplate.providers.wordpress.ui.WordpressDetailActivity" />
+        <activity android:name="com.stdio.radiotemplate.providers.woocommerce.ui.ProductActivity" />
         <activity
-            android:name=".comments.CommentsActivity"
+            android:name="com.stdio.radiotemplate.comments.CommentsActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".HolderActivity"
+            android:name="com.stdio.radiotemplate.HolderActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".attachmentviewer.ui.AttachmentActivity"
+            android:name="com.stdio.radiotemplate.attachmentviewer.ui.AttachmentActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".attachmentviewer.ui.AudioPlayerActivity"
+            android:name="com.stdio.radiotemplate.attachmentviewer.ui.AudioPlayerActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".attachmentviewer.ui.VideoPlayerActivity"
+            android:name="com.stdio.radiotemplate.attachmentviewer.ui.VideoPlayerActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".providers.woocommerce.ui.CheckoutActivity"
+            android:name="com.stdio.radiotemplate.providers.woocommerce.ui.CheckoutActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".providers.woocommerce.ui.WooCommerceLoginActivity"
+            android:name="com.stdio.radiotemplate.providers.woocommerce.ui.WooCommerceLoginActivity"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
-            android:name=".providers.tumblr.ui.TumblrPagerActivity"
+            android:name="com.stdio.radiotemplate.providers.tumblr.ui.TumblrPagerActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar" />
         <activity
-            android:name=".providers.youtube.player.YouTubePlayerActivity"
+            android:name="com.stdio.radiotemplate.providers.youtube.player.YouTubePlayerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="sensor"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
@@ -99,10 +99,10 @@
 
         <!-- Services -->
         <service
-            android:name=".providers.soundcloud.player.player.PlaybackService"
+            android:name="com.stdio.radiotemplate.providers.soundcloud.player.player.PlaybackService"
             android:exported="false" />
-        <service android:name=".providers.radio.player.RadioService" />
-        <service android:name=".attachmentviewer.MusicService" />
+        <service android:name="com.stdio.radiotemplate.providers.radio.player.RadioService" />
+        <service android:name="com.stdio.radiotemplate.attachmentviewer.MusicService" />
 
         <!--
         A receiver that will receive media buttons and send as
@@ -115,7 +115,7 @@
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".providers.soundcloud.player.media.MediaSessionReceiver">
+        <receiver android:name="com.stdio.radiotemplate.providers.soundcloud.player.media.MediaSessionReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
