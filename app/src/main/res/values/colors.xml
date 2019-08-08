@@ -3,8 +3,8 @@
     <color name="link_color">#34B2E7</color>
     
     <!-- Android -->
-    <color name="myPrimaryColor">#2196f3</color>
-    <color name="myPrimaryDarkColor">#1976d2</color>
+    <color name="myPrimaryColor">#CA5357</color>
+    <color name="myPrimaryDarkColor">#C93440</color>
     <color name="myPrimaryColorTransparent">#1F2196f3</color>
     <color name="myAccentColor">#00bcd4</color>
     <color name="myDrawerBackground">#ffffff</color>
