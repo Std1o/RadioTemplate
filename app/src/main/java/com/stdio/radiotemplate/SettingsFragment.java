@@ -84,49 +84,6 @@ public class SettingsFragment extends PreferenceFragment implements
 						return true;
 					}
 				});
-
-		// open about dialog
-		Preference preferencelicenses = findPreference("licenses");
-		preferencelicenses
-				.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-					@Override
-					public boolean onPreferenceClick(Preference preference) {
-						startActivity(new Intent(getActivity(), OssLicensesMenuActivity.class));
-						return true;
-					}
-				});
-
-		if (Config.HIDE_DRAWER || !Config.DRAWER_OPEN_START) {
-			PreferenceScreen preferenceScreen = (PreferenceScreen) findPreference("preferenceScreen");
-			Preference preferencedraweropen = findPreference("menuOpenOnStart");
-			preferenceScreen.removePreference(preferencedraweropen);
-		}
-		
-		// purchase
-		preferencepurchase = findPreference("purchase");
-		String license = getResources().getString(R.string.google_play_license);
-		if (null != license && !license.equals("")){
-			bp = new BillingProcessor(getActivity(),
-				license, this);
-			bp.loadOwnedPurchasesFromGoogle();
-		
-			preferencepurchase
-				.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-					@Override
-					public boolean onPreferenceClick(Preference preference) {
-						bp.purchase(getActivity(), PRODUCT_ID());
-						return true;
-					}
-				});
-		
-			if (getIsPurchased(getActivity())){
-				preferencepurchase.setIcon(R.drawable.ic_action_action_done);
-			}
-		} else {
-			PreferenceScreen preferenceScreen = (PreferenceScreen) findPreference("preferenceScreen");
-			PreferenceCategory billing = (PreferenceCategory) findPreference("billing");
-			preferenceScreen.removePreference(billing);
-		}
 		
 		String[] extra = getArguments().getStringArray(MainActivity.FRAGMENT_DATA);
 		if (null != extra && extra.length != 0 && extra[0].equals(SHOW_DIALOG)){

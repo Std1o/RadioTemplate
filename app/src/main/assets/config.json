@@ -17,7 +17,7 @@
   {
     "title":"Программа радиопередач",
     "drawable":"",
-    "submenu":"Other",
+    "submenu":"Дополнительно",
     "iap":false,
     "tabs":[
       {
