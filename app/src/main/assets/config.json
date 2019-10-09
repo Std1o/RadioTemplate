@@ -9,7 +9,7 @@
         "title":"Radio 3FM",
         "provider":"radio",
         "arguments":[
-          "https://a4.radioheart.ru:9033/RH5850"
+          "https://icecast-saha.cdnvideo.ru/saha"
         ]
       }
     ]
